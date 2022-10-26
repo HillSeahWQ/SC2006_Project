@@ -1,0 +1,56 @@
+@import 'variables';
+
+@mixin focusState($color) {
+    &:focus,
+    &:hover:not(:disabled) {
+        outline: none;
+        box-shadow: 0px 0px 0px 5px rgba($color, 0.8);
+        transition: all 250ms;
+    }
+}
+
+@mixin btn() {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 0.6rem 1.2rem;
+
+    border-radius: 20px 0px 20px 0px;
+
+    @include focusState($nia-blue-light);
+}
+
+@mixin btnWhite($color) {
+    @include btn();
+
+    background: $white;
+    color: $color;
+    border: none;
+}
+@mixin btnPrimary($color) {
+    @include btn();
+
+    background: $color;
+    color: $white;
+    border: none;
+}
+@mixin btnOutline($color) {
+    @include btn();
+
+    background: transparent;
+    color: $color;
+    border: 2px solid $color;
+}
+
+@mixin stroke($color, $size) {
+    text-shadow:
+        -#{$size} -#{$size} 0 $color,
+        0        -#{$size} 0 $color,
+        #{$size} -#{$size} 0 $color,
+        #{$size}  0        0 $color,
+        #{$size}  #{$size} 0 $color,
+        0         #{$size} 0 $color,
+        -#{$size}  #{$size} 0 $color,
+        -#{$size}  0        0 $color;
+}

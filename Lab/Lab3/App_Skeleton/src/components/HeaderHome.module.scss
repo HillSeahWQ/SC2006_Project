@@ -1,0 +1,122 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+@import '../styles/mediaqueries';
+
+.header {
+    position: relative;
+    height: 90vh;
+    @include respond(largePhone) {
+        height: 75vh;
+    }
+    @include respond(tablet) {
+        height: 70vh;
+    }
+    @include respond(laptop) {
+        height: 90vh;
+    }
+    background: $nia-pink;
+    background-image: linear-gradient(to top right,
+        $nia-pink,
+        rgba($nia-pink, 0.5)
+    ), 
+    url('../images/bg_mushishi.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header_content {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+
+    display: flex;
+    flex-direction: column;
+
+    & > h1 {
+        color: $white;
+        font-size: 5.5rem;
+        font-weight: 600;
+    }
+
+    & > h2 {
+        color: rgba($white, 0.8);
+        font-size: 2.2rem;
+    }
+}
+
+.button_container {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 3rem;
+
+    & > button {
+        cursor: pointer;
+
+        z-index: 50;
+    }
+
+    & > :first-child {
+        @include btnWhite($nia-pink);
+        margin-right: 1rem;
+        & > a {
+            color: $nia-pink;
+            text-decoration: none;
+        }
+    }
+    & > :last-child {
+        @include btnOutline($white);
+        & > a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+
+.side_banner {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, 0%);
+
+    font-size: 4.5rem;
+    color: $white;
+
+    @include respond(tablet) {
+        font-size: 5rem;
+        right: 5%;
+    }
+    @include respond(laptop) {
+        top: 35%;
+    }
+
+    z-index: 500;
+}
+
+.bottom_border {
+    position: absolute;
+    bottom: -0.575%;
+    @include respond(tablet) {
+        bottom: -0.7%;
+    }
+    @include respond(laptop) {
+        bottom: -0.8%;
+    }
+    left: 0;
+    width: 100%;
+
+    & > :first-child {
+        width: 100%;
+        height: auto;
+    }
+
+    & > :last-child {
+        width: 12rem;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

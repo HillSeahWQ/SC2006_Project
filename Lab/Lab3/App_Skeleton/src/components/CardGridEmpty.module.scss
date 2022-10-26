@@ -1,0 +1,52 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.message {
+    margin-top: $header-search-height;
+    padding: 5%;
+    height: calc(100vh - 12rem);
+    display: relative;
+}
+
+.message_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: $white;
+    text-align: center;
+
+    & > h1 {
+        font-size: 5rem;
+        margin-bottom: 2.5rem;
+        line-height: 5rem;
+
+        @include stroke($nia-pink, 4.5px);
+
+        animation: slideUp 350ms ease-out;
+    }
+    & > p {
+        font-size: 2.5rem;
+        @include stroke($nia-pink, 2px);
+
+        animation: slideUp 350ms ease-out;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

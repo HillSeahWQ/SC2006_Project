@@ -1,0 +1,25 @@
+@import '../styles/variables';
+@import '../styles/mediaqueries';
+
+.card_grid {
+    margin: 0 auto;
+    margin-top: $header-search-height;
+    padding: 1rem 5%;
+    height: calc(100vh - 12rem);
+    overflow: hidden;
+    overflow-y: scroll;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    @include respond(landscapePhone) {
+        grid-template-columns: repeat(3, auto);
+    }
+    @include respond(tablet) {
+        grid-template-columns: repeat(4, auto);
+    }
+    @include respond(laptop) {
+        grid-template-columns: repeat(5, auto);
+    }
+    gap: 1.2rem;
+    justify-items: center;
+}

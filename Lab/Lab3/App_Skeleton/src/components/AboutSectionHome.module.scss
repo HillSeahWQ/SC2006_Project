@@ -1,0 +1,151 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+@import '../styles/mediaqueries';
+
+.about {
+    position: relative;
+    padding: 0 5%;
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+    @include respond(largePhone) {
+        padding-bottom: 8.5rem;
+    }
+    @include respond(landscapePhone) {
+        padding-bottom: 12rem;
+    }
+    @include respond(tablet) {
+        padding-bottom: 16.5rem;
+    }
+    @include respond(laptop) {
+        padding-bottom: 19rem;
+    }
+    @include respond(desktop) {
+        padding-bottom: 22rem;
+    }
+    color: $white;
+
+    z-index: 500;
+
+    & > p {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+        @include stroke($nia-pink, 1.5px);
+
+        margin-bottom: 3rem;
+
+        @include respond(tablet) {
+            width: 70%;
+        }
+
+        & > a {
+            color: $white;
+            @include stroke($nia-blue-dark, 1.5px);
+
+            cursor: pointer;
+        }
+    }
+}
+
+.about_title {
+    text-align: left;
+    font-size: 5rem;
+    color: $white;
+    margin-bottom: 3rem;
+    @include stroke($nia-pink, 2.25px);
+}
+
+.about_example_cards {
+    position: relative;
+    height: 30rem;
+    width: 100%;
+    
+    margin-bottom: 2rem;
+
+    z-index: 50;
+
+    @include respond(tablet) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 30%;
+    }
+
+    & > div {
+        border-radius: 8px;
+        overflow: hidden;
+
+        height: 25rem;
+        width: 13.5rem;
+
+        box-shadow: -2px 2px 5px 2px rgba($black, 0.75);
+
+        & > img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    }
+}
+
+.card_1 {
+    position: absolute;
+    top: -5%;
+    right: 35%;
+
+    @include respond(tablet) {
+        top: 2%;
+        right: 8%;
+    }
+    @include respond(laptop) {
+        right: 15%;
+    }
+
+    z-index: -1;
+}
+
+.card_2 {
+    position: absolute;
+    top: 12%;
+    right: 50%;
+
+    @include respond(tablet) {
+        top: 52%;
+        right: 18%;
+    }
+    @include respond(laptop) {
+        right: 25%;
+    }
+
+    z-index: -3;
+}
+
+.card_3 {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+
+    @include respond(tablet) {
+        right: 35%;
+        z-index: -1;
+    }
+    @include respond(laptop) {
+        right: 42%;
+    }
+
+    z-index: -2;
+}
+
+.bottom_clip {
+    position: absolute;
+    bottom: -0.575%;
+    @include respond(tablet) {
+        bottom: -0.6%;
+    }
+    @include respond(laptop) {
+        bottom: -0.7%;
+    }
+    left: 0;
+    width: 100%;
+    height: auto;
+}

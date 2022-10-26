@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'mediaqueries';
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include respond(tablet) {
+        font-size: 70%;
+    }
+    @include respond(laptop) {
+        font-size: 80%;
+    }
+    @include respond(desktop) {
+        font-size: 85%;
+    }
+
+    scroll-behavior: smooth;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $rosario;
+    background: $nia-blue-light;
+}
+
+// main {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+
+//     width: 100%;
+//     height: 100%;
+//     overflow-y: scroll;
+
+//     display: flex;
+//     flex-direction: column;
+// }

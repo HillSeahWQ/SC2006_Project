@@ -1,0 +1,39 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    margin-top: $header-search-height;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    height: calc(100vh - 12rem);
+}
+
+.loading_display {
+    & > img {
+        height: 15rem;
+        width: auto;
+        margin-bottom: 1.5rem;
+
+        animation: spin 1500ms infinite linear;
+    }
+    & > div {
+        font-size: 4rem;
+        color: $white;
+        @include stroke($nia-pink, 3px);
+    }
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
