@@ -17,10 +17,10 @@
     padding: 8rem 0.75rem;
     margin-bottom: 3rem;
 
-    background: $nia-pink;
+    background: $nia-green;
     background-image: linear-gradient(to top right,
-        $nia-pink,
-        rgba($nia-pink, 0.5)
+        $nia-green,
+        rgba($nia-green, 0.5)
     ), 
     url('../images/bg_mushishi.jpeg');
     background-size: cover;
@@ -38,7 +38,7 @@
         line-height: 4.2rem;
         color: $white;
 
-        @include stroke($nia-pink, 1.75px);
+        @include stroke($nia-green, 1.75px);
     }
 }
 
@@ -51,7 +51,7 @@
     margin-top: -8rem;
 
     & > button {
-        @include btnWhite($nia-pink);
+        @include btnWhite($nia-green);
         min-height: 5rem;
         width: 80%;
         margin-bottom: 2rem;
@@ -60,7 +60,7 @@
             margin-bottom: 5rem;
         }
 
-        @include focusState($nia-pink);
+        @include focusState($nia-green);
 
         &:hover {
             cursor: pointer;

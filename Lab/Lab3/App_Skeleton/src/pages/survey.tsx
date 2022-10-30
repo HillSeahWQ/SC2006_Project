@@ -253,7 +253,7 @@ const Survey: React.FC<{}> = () => {
             <Helmet>
                 <html lang="en" />
                 <meta name="description" content="Try our brief multi-question survey to find your next anime, whether you\'re new or looking for hidden gems." />
-                <title>Anireka | Recommendation Survey</title>
+                <title>WeebDepo | Recommendation Algorithm</title>
             </Helmet>
 
             <Navbar />

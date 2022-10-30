@@ -18,7 +18,7 @@
 
     border-radius: 20px 0px 20px 0px;
 
-    @include focusState($nia-blue-light);
+    @include focusState($nia-light);
 }
 
 @mixin btnWhite($color) {

@@ -14,10 +14,10 @@
     @include respond(laptop) {
         height: 90vh;
     }
-    background: $nia-pink;
+    background: $nia-green;
     background-image: linear-gradient(to top right,
-        $nia-pink,
-        rgba($nia-pink, 0.5)
+        $nia-green,
+        rgba($nia-green, 0.5)
     ), 
     url('../images/bg_mushishi.jpeg');
     background-size: cover;
@@ -58,10 +58,10 @@
     }
 
     & > :first-child {
-        @include btnWhite($nia-pink);
+        @include btnWhite($nia-green);
         margin-right: 1rem;
         & > a {
-            color: $nia-pink;
+            color: $nia-green;
             text-decoration: none;
         }
     }

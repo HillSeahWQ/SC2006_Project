@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Logo from '../images/anireka.svg';
+import Logo from '../images/logo.png';
 
 import styles from './PageLoading.module.scss';
 

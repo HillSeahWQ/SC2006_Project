@@ -322,7 +322,7 @@ const Search: React.FC<{}> = () => {
             <Helmet>
                 <html lang="en" />
                 <meta name="description" content="Search for your favorite animes or discover something new. Browse by popularity, user score, new or by genre tags." />
-                <title>Anireka | Anime Search</title>
+                <title>WeebDepo | Search Categories</title>
             </Helmet>
 
             <Suspense fallback={<div className={styles.header_placeholder}></div>}>

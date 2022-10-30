@@ -18,7 +18,7 @@
 
     transition: all 250ms ease-out;
 
-    @include focusState($nia-pink);
+    @include focusState($nia-green);
 }
 
 .coverimage {
@@ -39,7 +39,7 @@
         background: linear-gradient(to bottom right,
             rgba($black, 0.3),
             rgba($black, 0.3),
-            rgba($nia-pink, 0.4)
+            rgba($nia-green, 0.4)
         );
     }
 
@@ -65,7 +65,7 @@
     line-height: 110%;
     color: $white;
     
-    @include stroke($nia-pink, 2px);
+    @include stroke($nia-green, 2px);
 }
 
 .section_top {
@@ -213,7 +213,7 @@
     bottom: 0;
     left: 0;
     height: 32rem;
-    background: $nia-blue-light;
+    background: $nia-light;
     width: 100%;
 
     z-index: 1000;

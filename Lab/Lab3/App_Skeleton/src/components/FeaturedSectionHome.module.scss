@@ -11,7 +11,7 @@
 
     overflow: hidden;
 
-    background: $nia-pink;
+    background: $nia-green;
 
     & > h2 {
         padding: 0 5%;
@@ -94,7 +94,7 @@
 
         &:hover,
         &:focus {
-            @include focusState($nia-blue-light);
+            @include focusState($nia-light);
         }
     }
 }

@@ -10,7 +10,7 @@
 
     height: $header-search-height;
 
-    background: $nia-pink;
+    background: $nia-green;
 
     z-index: 500;
 }
@@ -74,7 +74,7 @@
 
         &:focus {
             outline: none;
-            border-bottom: 4px solid $nia-blue-light;
+            border-bottom: 4px solid $nia-light;
             padding-top: 0rem;
         }
     }
@@ -82,7 +82,7 @@
     & > button {
         width: 17.5%;
         border: none;
-        background-color: $nia-blue-light;
+        background-color: $nia-light;
         color: $white;
 
         transition: all 250ms;
@@ -92,7 +92,7 @@
         }
 
         &:disabled {
-            background-color: rgba($nia-blue-light, 0.5);
+            background-color: rgba($nia-light, 0.5);
         }
 
         & > img {
@@ -109,7 +109,7 @@
         width: 10%;
     }
 
-    background: $nia-blue-light;
+    background: $nia-light;
     border-radius: 8px;
     border: 2px solid $white;
 
@@ -132,7 +132,7 @@
     margin-top: $header-search-height;
     transform: translateY(-0.5rem);
 
-    background: $nia-pink;
+    background: $nia-green;
 
     animation: slideIn 300ms;
 
@@ -163,7 +163,7 @@
     }
 
     & > button {
-        @include btnPrimary($nia-blue-light);
+        @include btnPrimary($nia-light);
         border: 2px solid $white;
 
         &:hover {
@@ -194,11 +194,11 @@
         font-weight: 500;
         padding: 0.3rem 0.5rem;
 
-        background: $nia-blue-light;
+        background: $nia-light;
         color: $white;
         border: none;
 
-        @include focusState($nia-blue-light);
+        @include focusState($nia-light);
 
         &:hover {
             cursor: pointer;
@@ -215,7 +215,7 @@
 }
 
 .genre_search_button {
-    @include btnPrimary($nia-blue-light);
+    @include btnPrimary($nia-light);
     border: 2px solid $white;
 
     transition: all 250ms;
@@ -271,7 +271,7 @@
     visibility: hidden;
 
     &:checked + label {
-        background-color: rgba($nia-blue-light, 0.8);
+        background-color: rgba($nia-light, 0.8);
     }
 
     &:checked + label:after {

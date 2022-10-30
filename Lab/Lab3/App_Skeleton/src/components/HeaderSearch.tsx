@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Genres, GridType } from '../application/customTypes';
 
-import Logo from '../images/anireka.svg';
+import Logo from '../images/logo.png';
 import Search from '../images/search.svg';
 import Options from '../images/options.svg';
 import Close from '../images/close.svg';

@@ -7,7 +7,7 @@
     bottom: 0;
     left: 0;
     height: 32rem;
-    background: $nia-blue-light;
+    background: $nia-light;
     width: 100%;
 
     display: flex;
@@ -26,7 +26,7 @@
 
     & > h3 {
         font-size: 3.25rem;
-        color: $nia-pink;
+        color: $nia-green;
         font-weight: 600;
         margin-top: 0.5rem;
 
@@ -60,7 +60,7 @@
 
 .missing {
     font-size: 3rem;
-    color: $nia-pink;
+    color: $nia-green;
     text-align: center;
     text-transform: capitalize;
     font-weight: 600;

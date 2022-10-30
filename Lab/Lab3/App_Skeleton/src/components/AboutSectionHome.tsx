@@ -43,8 +43,8 @@ const AboutSectionHome: React.FC<{}> = () => {
                 </div>
             </div>
 
-            <p>Popularity and genre filters are provided, along with a search bar where users can directly use the anime name to search for the desired anime <Link to="/search">search engine.</Link> For suitable animes tailored to your preferences. Click our  <Link to="/survey">Algorithm tab</Link> or scroll down to the featured section for curated results.</p>
-
+            <p>Popularity and genre filters are provided, along with a search bar where users can directly use the anime name to search for the desired anime <Link to="/search"> search engine.</Link> For suitable animes tailored to your preferences. Click our  <Link to="/survey"> Algorithm tab</Link> or scroll down to the featured section for curated results.</p>
+            
             <img 
                 className={styles.bottom_clip}
                 src={Clip}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Logo from '../images/anireka.svg';
+import Logo from '../images/logo.png';
 import Clip from '../images/clip-slash-blue.svg';
 
 import styles from './HeaderHome.module.scss';

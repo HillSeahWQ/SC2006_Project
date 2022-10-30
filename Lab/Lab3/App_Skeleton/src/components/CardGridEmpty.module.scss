@@ -28,13 +28,13 @@
         margin-bottom: 2.5rem;
         line-height: 5rem;
 
-        @include stroke($nia-pink, 4.5px);
+        @include stroke($nia-green, 4.5px);
 
         animation: slideUp 350ms ease-out;
     }
     & > p {
         font-size: 2.5rem;
-        @include stroke($nia-pink, 2px);
+        @include stroke($nia-green, 2px);
 
         animation: slideUp 350ms ease-out;
     }

@@ -13,10 +13,10 @@
     //this should change when layout shifts to row
     padding-bottom: 35%;
 
-    background: $nia-pink;
+    background: $nia-green;
     background-image: linear-gradient(to top right,
-        $nia-pink,
-        rgba($nia-pink, 0.7)
+        $nia-green,
+        rgba($nia-green, 0.7)
     ), 
     url('../images/bg_mushishi.jpeg');
     background-size: cover;
@@ -152,8 +152,8 @@
 
     background: linear-gradient(to bottom left,
         rgba($black, 0.5),
-        rgba($nia-pink, 0.6),
-        rgba($nia-pink, 0.8)
+        rgba($nia-green, 0.6),
+        rgba($nia-green, 0.8)
     );
 
     & > div {
@@ -179,7 +179,7 @@
     padding: 0 7%;
     line-height: 2.6rem;
 
-    color: $nia-pink;
+    color: $nia-green;
 
     transform: translateY(-5rem);
     @include respond(landscapePhone) {
@@ -220,7 +220,7 @@
         margin-top: -18rem;
     }
 
-    background: $nia-pink;
+    background: $nia-green;
 
     display: flex;
     flex-direction: column;

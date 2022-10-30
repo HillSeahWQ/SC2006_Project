@@ -1,10 +1,10 @@
 @import '../styles/variables';
 
 .grid_body {
-    background: $nia-blue-dark;
+    background: $nia-dark;
     background-image: linear-gradient(to top right,
-        $nia-blue-dark,
-        rgba($nia-blue-light, 0.5)
+        $nia-dark,
+        rgba($nia-light, 0.5)
     ), 
     url('../images/bg_mushishi.jpeg');
     background-size: cover;
@@ -20,7 +20,7 @@
 
     height: $header-search-height;
 
-    background: $nia-blue-light;
+    background: $nia-light;
 
     z-index: 500;
 }
@@ -33,5 +33,5 @@
     width: 100%;
     height: 4rem;
 
-    background: $nia-blue-light;
+    background: $nia-light;
 }

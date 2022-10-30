@@ -22,7 +22,7 @@
         text-decoration: underline;
         text-transform: capitalize;
 
-        @include stroke($nia-pink, 3.2px);
+        @include stroke($nia-green, 3.2px);
 
         animation: slideUp 350ms ease-out;
 
@@ -35,7 +35,7 @@
 
         margin-bottom: 3rem;
 
-        @include stroke($nia-pink, 4.5px);
+        @include stroke($nia-green, 4.5px);
 
         animation: slideUp 350ms ease-out;
 
@@ -52,7 +52,7 @@
         & > li {
             color: rgba($white, 0.8);
             max-width: 40ch;
-            @include stroke($nia-pink, 1.2px);
+            @include stroke($nia-green, 1.2px);
         }
 
         & > li:not(:last-child) {
@@ -70,5 +70,5 @@
     clip-path: circle(82.7% at 19% 4%);
     -webkit-clip-path: circle(82.7% at 19% 4%);
 
-    background: $nia-pink;
+    background: $nia-green;
 }

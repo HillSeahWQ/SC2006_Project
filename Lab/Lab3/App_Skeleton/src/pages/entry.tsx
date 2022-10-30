@@ -10,7 +10,7 @@ import Navbar from '../components/Navbar';
 import PageLoading from '../components/PageLoading';
 
 import SwoopClip from '../images/swoop_clip.svg';
-import Logo from '../images/anireka.svg';
+import Logo from '../images/logo.png';
 
 import styles from './entry.module.scss';
 
@@ -201,7 +201,7 @@ const Entry: React.FC<Props> = ({ match }) => {
                             className={styles.info_top_clip}
                             src={SwoopClip}
                             alt=""
-                            aria-hidden="true"
+                            aria-hidden="false"
                         />
                     </section>
 

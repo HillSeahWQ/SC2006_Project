@@ -24,7 +24,7 @@
         }
 
         color: $white;
-        @include stroke($nia-blue-dark, 1.5px);
+        @include stroke($nia-dark, 1.5px);
         text-decoration: none;
         font-weight: 600;
     }
