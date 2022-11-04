@@ -14,6 +14,8 @@ import Logo from '../images/logo.png';
 
 import styles from './entry.module.scss';
 
+//@author: Bhat Sachin <SACHIN008@e.ntu.edu.sg>
+
 interface Props {
     match: {
         isExact: boolean,
