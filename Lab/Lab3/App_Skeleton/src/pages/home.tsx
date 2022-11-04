@@ -8,6 +8,8 @@ import Footer from '../components/Footer';
 
 // import styles from './home.module.scss';
 
+// @author: Bhat Sachin <SACHIN008@e.ntu.edu.sg>
+
 const Home: React.FC<{}> = () => {
 
     const FeaturedSectionHome = React.useMemo(() => React.lazy(() => import('../components/FeaturedSectionHome')), []);
