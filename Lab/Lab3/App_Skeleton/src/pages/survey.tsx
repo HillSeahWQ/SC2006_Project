@@ -8,6 +8,8 @@ import SurveyQuestion from '../components/SurveyQuestion';
 
 import styles from './survey.module.scss';
 
+// @author: Bhat Sachin <SACHIN008@e.ntu.edu.sg>
+
 const Survey: React.FC<{}> = () => {
 
     const history = useHistory();    
