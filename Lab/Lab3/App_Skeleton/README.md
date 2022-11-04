@@ -1,4 +1,4 @@
-# WeebDepo PWA
+# WeebDepo PWA ( Sofware Development Lifecycle )
 
 WeebDeepo is a PWA for finding detailed information on anime series, movies and music videos that impliments a feature rich search page with the aim of letting users find new series and recommendations. Data is sourced from [AniList GraphQL API](https://github.com/AniList/ApiV2-GraphQL-Docs).
 
