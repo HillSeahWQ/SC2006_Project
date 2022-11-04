@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+// @author: Hill Seah Wen Qi <HILL008@e.ntu.edu.sg>
+
 function runtimeObserver(stateArg) {
     let rto;
 
