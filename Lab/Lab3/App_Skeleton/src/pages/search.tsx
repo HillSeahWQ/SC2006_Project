@@ -9,6 +9,8 @@ import CardGridOffline from '../components/CardGridOffline';
 
 import styles from './search.module.scss';
 
+// @author: Bhat Sachin <SACHIN008@e.ntu.edu.sg>
+
 const Search: React.FC<{}> = () => {
 
     //lazy load to improve performance
