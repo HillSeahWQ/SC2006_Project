@@ -8,6 +8,8 @@ import PageLoading from '../components/PageLoading';
 
 import '../styles/app.scss';
 
+// @author: Keerthana Jayaraman Karthikeyan <KEER004@e.ntu.edu.sg>
+
 const App: React.FC<{}> = () => {
 
     const Home = React.lazy(() => import('../pages/home'));
