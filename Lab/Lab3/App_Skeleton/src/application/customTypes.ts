@@ -1,3 +1,5 @@
+// @author: Keerthana Jayaraman Karthikeyan <KEER004@e.ntu.edu.sg>
+
 ////////// Shared //////////
 
 export type Answer = {
