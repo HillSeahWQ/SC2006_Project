@@ -25,8 +25,8 @@ One of the biggest things I learned as a result of building a project this size 
 1. Ensure you have [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed either via a node version manager or a source npm install or via the [AUR](https://archlinux.org/packages/community/any/npm/) for Arch Linux users.
 2. Clone the repo.
 3. Navigate into the project directory and open a terminal through the file manager.
-4. Run the commands in the following order:
-`cd WeebDepo_PWA`
-`npm install react`
-`npm install react-scripts --force`
+4. Run the commands in the following order:  
+`cd WeebDepo_PWA`  
+`npm install react`  
+`npm install react-scripts --force`  
 `npm start` 
