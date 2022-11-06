@@ -30,3 +30,7 @@ One of the biggest things we learned as a result of building a project this size
 `npm install react`  
 `npm install react-scripts --force`  
 `npm start` 
+
+### 3rd-party Integrations
+
+Note: to enable dark mode toggle(optional) install the dark reader browser extension from the [chrome web store](https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh) or [mozilla addons](https://addons.mozilla.org/en-GB/firefox/addon/darkreader/). It is also recommended to pin the browser extension for easy access to switch between light and dark mode.  
