@@ -1,0 +1,17 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == largePhone {
+        @media (min-width: 25rem) { @content }; //400px
+    }
+    @if $breakpoint == landscapePhone {
+        @media (min-width: 35.5em) { @content }; //568px
+    }
+    @if $breakpoint == tablet {
+        @media (min-width: 48em) { @content }; //768px
+    }
+    @if $breakpoint == laptop {
+        @media (min-width: 64em) { @content }; //1024px
+    }
+    @if $breakpoint == desktop {
+        @media (min-width: 81.25em) { @content }; //1300px
+    }
+}

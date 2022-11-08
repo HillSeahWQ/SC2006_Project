@@ -1,0 +1,69 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.question {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    position: relative;
+    padding: 8rem 0.75rem;
+    margin-bottom: 3rem;
+
+    background: $nia-green;
+    background-image: linear-gradient(to top right,
+        $nia-green,
+        rgba($nia-green, 0.5)
+    ), 
+    url('../images/bg_mushishi.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    clip-path: polygon(0 0, 100% 0, 100% 72.5%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 72.5%, 0% 100%);
+
+    z-index: 50;
+
+    & > h2 {
+        text-align: center;
+        font-size: 3.75rem;
+        line-height: 4.2rem;
+        color: $white;
+
+        @include stroke($nia-green, 1.75px);
+    }
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 7rem 0;
+    margin-top: -8rem;
+
+    & > button {
+        @include btnWhite($nia-green);
+        min-height: 5rem;
+        width: 80%;
+        margin-bottom: 2rem;
+        
+        &:last-child {
+            margin-bottom: 5rem;
+        }
+
+        @include focusState($nia-green);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

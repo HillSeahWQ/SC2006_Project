@@ -1,0 +1,74 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.offline {
+    margin-top: $header-search-height;
+    padding-top: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: calc(100vh - 12rem);
+
+    display: flex;
+    flex-direction: column;
+
+    color: $white;
+    text-align: left;
+
+    & > h1 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        line-height: 5rem;
+
+        text-decoration: underline;
+        text-transform: capitalize;
+
+        @include stroke($nia-green, 3.2px);
+
+        animation: slideUp 350ms ease-out;
+
+        z-index: 20;
+    }
+
+    & > h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+
+        margin-bottom: 3rem;
+
+        @include stroke($nia-green, 4.5px);
+
+        animation: slideUp 350ms ease-out;
+
+        z-index: 20;
+    }
+
+    & > ul {
+        font-size: 2.2rem;
+        padding-left: 0;
+        list-style-type: none;
+
+        z-index: 20;
+
+        & > li {
+            color: rgba($white, 0.8);
+            max-width: 40ch;
+            @include stroke($nia-green, 1.2px);
+        }
+
+        & > li:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.background_div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(82.7% at 19% 4%);
+    -webkit-clip-path: circle(82.7% at 19% 4%);
+
+    background: $nia-green;
+}

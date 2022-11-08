@@ -1,0 +1,100 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+@import '../styles/mediaqueries';
+
+.featured {
+    position: relative;
+    padding-top: 3.5rem;
+    margin-top: 0.2rem;
+    padding-bottom: 5rem;
+    width: 100%;
+
+    overflow: hidden;
+
+    background: $nia-green;
+
+    & > h2 {
+        padding: 0 5%;
+        text-align: left;
+        font-size: 5rem;
+        color: $white;
+        margin-bottom: 3rem;
+    }
+}
+
+.featured_sliders {
+    display: flex;
+    flex-direction: column;
+
+    & > img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 70%;
+        width: auto;
+
+        opacity: 0.8;
+
+        z-index: 0;
+    }
+
+    & > section {
+        min-width: 100%; 
+        height: 100%;
+        position: relative;
+
+        & > h3 {
+            margin-left: 5%;
+            margin-bottom: 2rem;
+            width: 95%;
+
+            text-align: left;
+            color: $white;
+            font-size: 3.5rem;
+            border-bottom: 2px solid $white;
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    justify-items: center;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; 
+}
+
+.card_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    min-width: 100vw;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    scroll-snap-align: start;
+
+    & > div {
+        height: 23.5rem;
+        width: 10.5rem;
+        @include respond(largePhone) {
+            height: 25rem;
+            width: 13rem;
+        }
+        @include respond(landscapePhone) {
+            height: 28rem;
+            width: 16rem;
+        }
+
+        &:hover,
+        &:focus {
+            @include focusState($nia-light);
+        }
+    }
+}

@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-color:rgb(51, 238, 136);
+}
+nav{
+    display:flex;
+    align-items: right;
+}
+
+
+.logo img{
+    padding-top: 0%;
+    width: 200px;
+    height:fit-content;
+    margin:auto;
+    float: center;
+}
+
+.pagename {
+    width: 115%;
+    text-align:right;
+    margin:auto;
+    font-size: 80px;
+    font-family: fantasy;
+    overflow:auto;
+    padding: 10px;
+}
+
+.nav-links{
+    width: 100%;
+    background-color: rgba(85, 85, 85, 0);
+    overflow: auto;
+}
+.nav-links img{
+    width: 50px;
+    padding: 10px;
+    margin:auto;
+    float: center;
+}
+.nav-links a{
+    float: right;
+    text-align: right;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.13);
+  }
+
+.login-box{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: fantasy;
+    background-color: rgb(51, 238, 136);
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #343B5C;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #343B5C;
+}
+
+    /* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+.review{
+font-family:fantasy;
+font-size: large;
+}
+
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+    overflow: auto;
+    height: 578px;
+}
+.testimonial-box{
+    width:100%;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+    outline-style: solid;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+.searchbar{
+        width: 20%;
+        left: 25%;
+        text-align: center;
+        font-family: fantasy;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+}
+
+.review-box{
+        width:100%;
+        box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin: 15px;
+        cursor: pointer;
+        outline-style: solid;
+}
+
+.description-container{
+    text-align: left;
+}
+
+.anime-name{
+    text-align: left;
+    font-size: xx-large;
+}
+
+.anime-description{
+    text-align: left;
+    font-size: large;
+}
+
+.anime-genre{
+    text-align: left;
+    font-size: large;
+}
+
+.anime-episodes{
+    text-align: left;
+    font-size: large;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+.review{
+    text-align: left;
+}
+
+.anime-name{
+    text-align: left;
+}
+
+.review-container{
+    text-align: left;
+}
+
+.btn1{
+    margin-top: 165px; 
+    margin-left: -650px;
+}
+.btn1 a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    background: black;
+    border-radius: 20px;
+}
+.btn1 a:hover{
+    background: #333;
+    color:black;
+}
+.btn1 i{
+    color:black;
+    padding: 0px 10px;
+}
+.btn2{
+    margin-top: -24px; 
+    margin-left: 600px;
+}
+.btn2 a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    background: black;
+    border-radius: 20px;
+}
+.btn2 a:hover{
+    background: #333;
+    color: black;
+}
+.btn2 i{
+    color:black;
+    padding: 0px 10px;
+}
