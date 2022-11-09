@@ -2,4 +2,4 @@
  NTU SC2006 - Software Engineering project
 
 To view our Visual Demo:
-https://www.youtube.com/watch?v=Zn78zlnQSLs
+https://www.youtube.com/watch?v=fc6UpvPmmAU
